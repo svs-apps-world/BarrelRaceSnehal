@@ -1,0 +1,50 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bk_barrels1"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+	
+      
+	  	  <ImageButton
+          android:id="@+id/button_quit"
+          android:layout_width="100dip"
+          android:layout_height="50dip"
+          android:layout_alignParentBottom="true"
+          android:layout_alignParentRight="true"
+          android:background="@drawable/quit1" 
+          android:onClick="quitButtonPressed"/>
+
+      <ImageButton
+          android:id="@+id/button_play"
+          android:layout_width="100dip"
+          android:layout_height="50dip"
+          android:layout_alignLeft="@+id/button_quit"
+          android:layout_alignParentTop="true"
+          android:layout_marginTop="33dp"
+          android:background="@drawable/horse_dance"
+          android:onClick="playButtonPressed" />
+
+      <ImageButton
+          android:id="@+id/button_viewscore"
+          android:layout_width="100dip"
+          android:layout_height="50dip"
+          android:layout_alignLeft="@+id/button_play"
+          android:layout_below="@+id/button_play"
+          android:layout_marginTop="28dp"
+          android:background="@drawable/score1" 
+          android:onClick="viewScoreButtonPressed"/>
+
+      <ImageView
+          android:id="@+id/image_barrel_race"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_above="@+id/button_quit"
+          android:layout_alignRight="@+id/button_quit"
+          android:src="@drawable/barrell_race1" />
+
+</RelativeLayout>
